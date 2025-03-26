@@ -1,0 +1,24 @@
+{
+  "name": "fider-vercel",
+  "version": "1.0.0",
+  "description": "Fider deployment on Vercel",
+  "main": "index.js",
+  "scripts": {
+    "dev": "docker run -p 3000:3000 -e BASE_URL=http://localhost:3000 -e JWT_SECRET=dev-secret getfider/fider:latest",
+    "build": "echo 'No build required'"
+  },
+  "engines": {
+    "node": ">=14.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1nickfisher/fider-feedback.git"
+  },
+  "keywords": [
+    "feedback",
+    "fider",
+    "vercel"
+  ],
+  "author": "",
+  "license": "MIT"
+}
