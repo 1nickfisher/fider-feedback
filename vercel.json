@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "Dockerfile",
+      "use": "@vercel/docker"
+    }
+  ],
+  "env": {
+    "BASE_URL": "YOUR_VERCEL_URL",
+    "JWT_SECRET": "REPLACE_WITH_RANDOM_SECRET",
+    "DATABASE_URL": "YOUR_POSTGRES_CONNECTION_STRING",
+    "EMAIL_NOREPLY": "noreply@yourdomain.com"
+  }
+}
